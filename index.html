@@ -12,7 +12,10 @@
   </head>
 
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+  <!-- Here's my primary content wrapper -->
+<!-- <div class="container-xl" -->
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
       <div class="container-fluid">
         <a class="navbar-brand" href="index.html">Latitude</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -31,7 +34,7 @@
                 <li><a class="dropdown-item" href="Wind_Speed.html">City Latitidue vs Wind Speed</a></li>
               </ul>
             </li>
-            <li class="nav-item, active">
+            <li class="nav-item">
               <a class="nav-link" href="Comparisons_Page.html">Comparisons</a>
             </li>
             <li class="nav-item">
@@ -41,29 +44,58 @@
         </div>
       </div>
     </nav>
-    <!-- End Navigation Element -->
 
-  <div class="container">
-    <div class="row row-cols-2">
+    <div class="container-fluid">
 
-      <div class="col">
-        <a href="max_temp.html"><img src="../Resources/assets/images/Fig1.png" alt="Latitude vs. Max Temperature" width="100%" height="100%"></a>
+      <div class="row">
+      <!-- Here is the left-most cotent, my primary area with greeting / info. -->
+        <div class="col-md-7">
+          <div class="box-container">
+            <div class="page-header">
+              <h1 class="box-title">Summary:  Latitude vs. X</h1>
+            </div>
+
+            <!-- Still debating if I want a graphic or not here -->
+            <!-- <img src="../Resources/assets/images/Fig1.png" alt="City Latitude vs. Max Temperature" width="80%"" height="80%" class="pull-left"> -->
+
+            <font size="4.5">
+              <div class="description">
+                <p>
+                  The purpose of this project was to analyze how weather changes as you get closer to the equator. To accomplish this Analysis, 
+                  we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities.
+                </p>
+                <p>
+                  After assembling the dataset, we used Matplotlib to plot various aspects of the wether vs. latitude.  Factors we looked at 
+                  included:  temperature, clousiness, wind speed, and humidity.  This site provides the source data and visualizations created 
+                  as part of the analysis, as well as explanations and descriptions of any trends and correlations observed.
+                </p>
+              </div>
+            </font>
+          </div>
+        </div>
+      <!-- Here is the right-most panel, with quick snapshot images of the visualizations -->
+        <div class="col-md-5">
+          <div class="box-container">
+            <div class="page-header">
+              <h2 class="box-title">Visualizations</h2>
+            </div>
+
+            <a href="max_temp.html"><img src="Resources/assets/images/Fig1.png" alt="Latitude vs. Max Temperature" width="40%" height="40%"></a>
+            <a href="humidity.html"><img src="Resources/assets/images/Fig2.png" alt="Latitude vs. Humidity" width="40%" height="40%"></a>
+            <a href="cloudiness.html"><img src="Resources/assets/images/Fig3.png" alt="Latitude vs. Cloudiness" width="40%" height="40%"></a>
+            <a href="wind_speed.html"><img src="Resources/assets/images/Fig4.png" alt="Latitude vs. Wind Speed" width="40%" height="40%"></a>
+          </div>
+
+
+        
         </div>
 
-      <div class="col">
-        <a href="humidity.html"><img src="../Resources/assets/images/Fig2.png" alt="Latitude vs. Humidity" width="100%" height="100%"></a>
-      </div>
 
-      <div class="col">
-         <a href="cloudiness.html"><img src="../Resources/assets/images/Fig3.png" alt="Latitude vs. Cloudiness" width="100%" height="100%"></a>
-      </div>
-<a href="wind_speed.html"><img src="../Resources/assets/images/Fig4.png" alt="Latitude vs. Wind Speed" width="100%" height="100%"></a>
-      <div class="col">
-      
-      
       </div>
     </div>
-  </div>
+    
+  
+    <!-- End Navigation Element -->
 
     <!-- Optional JavaScript; choose one of the two! -->
 
@@ -75,5 +107,6 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
     -->
+  </div>
   </body>
 </html>
